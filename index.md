@@ -19,15 +19,25 @@ You should comment out all portions of your portfolio that you have not complete
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZY0k1uvYIJs?si=agaJG5lc9aZ0qguW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+**Progress**
+
+First, on my laptop I downloaded the Raspberry Pi OS system and its related files. I plugged in the microSD card and uploaded the OS system into to, then slotted the SD card into the Raspberry itself. When downloading and initializing the Raspberry, you must set a hostname and username for the Raspberry and also connect it to wifi. 
+
+Using the hostname and username of the Raspberry and given that its on the same wifi network as my laptop, I could connect to the Raspberry and access the terminal remotely on my laptop's terminal via SSH. (ssh username@hostname.local)
+
+Additionally, I downloaded an app called RealVNC Virtual on my laptop in order to view the screen of the Raspberry (this is another way to access its terminal). 
+
+I built the chassis of the robot and attached the motors, wheels, and battery pack. I wired a ultrasonic sensor to the raspberry pi with a resistor setup on the breadboard. This resistor setup is very important, and its purpose is to reduce the voltage from 5V to 3.3V by using a 1k and 2k resistor. 
+
+(Insert Fritzing here)
+
+Next, I tested the ultrasonic sensors and the Pi camera using Python code uploaded to the raspberry and verified that they work. 
+scp filename.py username@hostname.local:/home/username
+I connected the Pi camera 2 directly to the Raspberry and tested it as well. 
+
+(Insert code here)
 
 # Second Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
